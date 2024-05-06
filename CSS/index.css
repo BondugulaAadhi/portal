@@ -1,0 +1,192 @@
+/* CSS styles from the first HTML */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo1 {
+    text-align: center;
+}
+
+.logo1 img {
+    max-width: 120px;
+    height: auto;
+}
+
+.center-text {
+    margin-top: -15px;
+    text-align: center;
+}
+
+.red-text {
+    color: red;
+}
+
+.gml {
+    max-width: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #43a6ed;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#internInfo {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#internInfo h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#internInfo p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#documentsLink {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#documentsLink:hover {
+    color: #0056b3;
+}
+
+#helpButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#helpButton:hover {
+    background-color: #c82333;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* CSS styles fOR MARQUEE */
+/* CSS for 3D Marquee */
+.marquee {
+white-space: nowrap;
+overflow: hidden;
+box-sizing: border-box;
+animation: marquee 20s linear infinite;
+transform-style: preserve-3d;
+perspective: 300px; /* Adjust the perspective for different depth effect */
+}
+
+.marquee:hover {
+animation-play-state: paused;
+}
+
+.marquee span {
+display: inline-block;
+padding: 0 1rem; /* Adjust spacing as needed */
+transform: translateZ(25px); /* Adjust the depth of the text */
+}
+
+@keyframes marquee {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+
+footer {
+background-color: #f2f2f2;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+color: #666;
+font-size: 14px;
+}
+
+
+
+
+
+.smh {
+text-align: center; /* Center align the content */
+}
+
+.smh a {
+display: inline-block; /* Make the anchor tags inline-block */
+margin: 0 10px; /* Add some margin between the images */
+}
+
+.smh a img {
+width: 25px; /* Set the width of the images */
+}
+
+/* Apply hover effect */
+.smh a img:hover {
+opacity: 0.7; /* Reduce opacity on hover */
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="Image/png" href="./IMAGES/DOCQ LOGO.jpg">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Intern Portal</title>
+    
+</head>
+<body>
+    <marquee>Apply for internship here ⚡️: <a href="https://nrnjfad9.forms.app/internship-application-form">https://nrnjfad9.forms.app/internship-application-form</a></marquee>
+    <div class="container">
+        <div class="logo1"><img src="./IMAGES/DOCQ LOGO.jpg" alt="DOC-Q"></div>
+        <h1>Intern Portal</h1>
+        <div class="center-text">
+            <h6><span class="red-text">Attention all users:</span> Your unique Inten IDs are ready for pickup! Check your inbox <img src="./IMAGES/gmail.jpeg" class="gml"> now to find yours!</h6>
+        </div>
+        <label for="internID">Enter your Intern ID:</label>
+        <input type="text" id="internID" name="internID" required>
+        <button onclick="fetchInternDetails()">Submit</button>
+        
+        <div id="internDetails"></div>
+    </div>
+
+    <div class="smh">
+        <a href="https://in.linkedin.com/company/doc-q"><img src="IMAGES/linked_12940285.png"Linked In width="25px" alt="Linked In"></a>
+     <a href="https://www.instagram.com/officialdocq/"><img src="IMAGES/instagram_1384031.png" width="25px" alt="Instagram"></a>
+     <a href="mailto:docq.help@gmail.com">
+        <img src="IMAGES/email_2213470.png" width="30px" alt="Email">
+    </a>
+    
+    </div>
+    
+    
+    
+        <footer>
+            <p> A new system to showcase your performance every week. It's a fantastic opportunity to celebrate your hard work and keep our momentum strong.
+                 Make sure to join every meeting, respond promptly, and complete mandatory tasks to keep our performance at its peak. "Together, let's aim for excellence!"</p>
+            <p> <p>Are you an admin? <a href="admin_login.html">Login Here</a></p></p>
+                 <p>&copy; 2024 DOC-Q INTERN PORTAL. All rights reserved.</p>
+        </footer>
+
+    <script>
+// Function to fetch intern details based on ID
+function fetchInternDetails() {
+    const internID = document.getElementById('internID').value;
+
+    // Simulated intern data (replace with your actual data)
+    const internsData = [
+        {
+            uniqueId: "D1O2C",
+            name: "Ghazala, Zameer",
+            contactInfo: "zameerghazala20@gmail.com",
+            role: "Front End Intern",
+            performance: "Good",
+            documentsLink: "./DOCUMENTS/doc.html"
+        },
+        {
+            uniqueId: "D103N",
+            name: "Aadhi, Bondugula",
+            contactInfo: "aadhirock022003@gmail.com",
+            role: "Front End Intern",
+            performance: "Good",
+            documentsLink: "./DOCUMENTS/doc2.html"
+        },
+        // Add more intern data here...
+    ];
+
+    // Find the intern with the given ID
+    const intern = internsData.find(intern => intern.uniqueId === internID);
+
+    if (intern) {
+        // Display intern details
+        displayInternDetails(intern);
+    } else {
+        alert("Intern ID not found. Please enter a valid ID.");
+    }
+}
+
+// Function to display intern details
+function displayInternDetails(intern) {
+    const internDetailsDiv = document.getElementById('internDetails');
+    internDetailsDiv.innerHTML = `
+        <h2>Intern Details</h2>
+        <p><strong>Name:</strong> ${intern.name}</p>
+        <p><strong>Contact Info:</strong> ${intern.contactInfo}</p>
+        <p><strong>Role:</strong> ${intern.role}</p>
+        <p><strong>Performance:</strong> ${intern.performance}</p>
+        <p><a href="${intern.documentsLink}" target="_blank">Documents Link</a></p>
+    `;
+}
+
+    </script>
+</body>
+</html>
